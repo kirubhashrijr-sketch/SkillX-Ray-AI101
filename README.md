@@ -1,11 +1,33 @@
-<div align="center">
+# SkillX-Ray AI
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+**Discover Your Hidden Skills. Unlock Your Future.**
 
-  <h1>Built with AI Studio</h2>
+SkillX-Ray AI is a full-stack multi-agent career intelligence SaaS platform that analyzes PDF resumes and project descriptions to surface hidden capabilities, visualize skill gaps, match ideal career trajectories, and generate personalized 30-day adaptive learning roadmaps.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Core Features
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. **Resume & Project Analyzer** — Uploads and extracts text from PDF resumes (`pdf-parse`) alongside project narratives.
+2. **Hidden Skill Detector** — Uncovers implicit technical, communication, leadership, and problem-solving skills backed by verbatim evidence quotes.
+3. **Interactive Skill X-Ray** — Categorizes competencies into Strong, Hidden, Developing, and Missing buckets with interactive Chart.js Radar, Doughnut, and Proficiency vs. Demand visualizations.
+4. **AI Career Matching** — Recommends top 3 career paths with match percentages, salary ranges, matched vs. missing skills, and one-click roadmap tailoring.
+5. **30-Day Adaptive Learning Roadmap & AI Mentor** — Generates a daily study & hands-on drill schedule with persistent progress tracking and an interactive AI Mentor grounded in your Skill X-Ray profile.
 
-</div>
+## Five Specialized AI Agents
+
+All agents execute server-side via Google Gemini (`@google/genai`, `gemini-4-hydrogen`) with structured JSON schemas and automatic Demo Mode fallback when `GEMINI_API_KEY` is unavailable:
+
+1. **Resume Analysis Agent**
+2. **Hidden Skill Discovery Agent**
+3. **Skill Gap Analysis Agent**
+4. **Career Matching Agent**
+5. **Learning Mentor Agent**
+
+## Local Setup
+
+```bash
+cp .env.example .env
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
